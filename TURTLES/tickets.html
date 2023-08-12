@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles/tickets.css">
+</head>
+<body>
+
+    <div class ="topic">
+       <h2> Buy Tickets</h2>
+    </div>
+
+<br>
+
+<div class="nav">
+    <a href="index.html"> &lt; HOME  </a>
+    <a href="tickets.html" class="active">  &lt; TICKETS </a>
+</div>
+    
+
+    <table class="PricesTable">
+        <tr>
+          <th>Category</th>
+          <th>Normal Hour Charge (USD)</th>
+          <th>Peak Hour Charge (USD)</th>
+        </tr>
+        <tr>
+          <td>Foreigner Adult <br> <small>(Above 15 Years)</small></td>
+          <td> $ 10</td>
+          <td>$ 13</td>
+        </tr>
+        <tr>
+          <td>Foreigner Child <br> <small>(5-14 Years)</small></td>
+          <td>$ 5</td>
+          <td>$ 8</td>
+        </tr>
+        <tr>
+          <td>Sri Lankan Adult <br> <small>(Above 15 Years)</small></td>
+          <td>$ 4</td>
+          <td>$ 6</td>
+        </tr>
+        <tr>
+          <td>Sri Lankan Child <br> <small>(5-14 Years)</small></td>
+          <td>$ 2</td>
+          <td>$ 3</td>
+        </tr>
+        <tr>
+            <td>Infants <br> <small>(Under 4 Years)</small></td>
+            <td>Free</td>
+            <td>Free</td>
+        </tr>
+      </table>
+
+      <hr>
+
+    <div class="table-section">
+   <table class="summarytable">  
+     <tr>
+         <td>Date</td>
+         <td id="selectedDate"></td>
+     </tr>
+     <tr>
+         <td>Time</td>
+         <td id="timePeriod"></td>
+     </tr>
+     <tr>
+         <td>Duration</td>
+         <td id="timeduration"></td>
+     </tr>
+     <tr>
+         <th>Tickets</th>
+         <th>Charges</th>
+     </tr>
+     <tr id="slAdultRow">
+       <td id="slAdultdata"></td>
+       <td id="slAdultSummary"></td>
+     </tr>
+     <tr id="slChildRow">
+       <td id="slChilddata"></td>
+       <td id="slChildSummary"></td>
+     </tr>
+     <tr id="foreignerAdultRow">
+       <td id="foreignerAdultdata"></td>
+       <td id="foreignerAdultSummary"></td>
+     </tr>
+     <tr id="foreignerChildRow">
+       <td id="foreignerChilddata"></td>
+       <td id="foreignerChildSummary"></td>
+     </tr>
+     <tr id="infantsRow">
+       <td id="infantsdata"></td>
+       <td id="infantsSummary"></td>
+     </tr>
+     <tr>
+       <td>Total Amount</td>
+       <td id="totalAmount"></td>
+     </tr>
+   </table>
+   </div>
+
+<div class="container">
+
+ <form method="get" id="UserInputForm">
+
+  <!-- SUBSECTION - DATES -->
+      <div class="datesSection">
+        <h3>Choose a date to visit us !</h3>
+        <br><br>
+        <input type="date" id="visitDate" class="datesection" >
+      </div>
+
+    
+<!-- SUBSECTION DURATION -->
+      <div class = timeList>
+        <h3>Choose a timeslot for your visit!</h3>
+        <br><br>
+        <select id="HourlySlot" class="timeslots" multiple>
+            <option value="7-8">07:00 AM to 08:00 AM</option>
+            <option value="8-9">08:00 AM to 09:00 AM</option>
+            <option value="9-10">09:00 AM to 10:00 AM</option>
+            <option value="10-11">10:00 AM to 11:00 AM (Peak Hour)</option>
+            <option value="11-12">11:00 AM to 12:00 PM (Peak Hour)</option>
+            <option value="12-1">12:00 PM to 01:00 PM (Peak Hour)</option>
+            <option value="1-2">01:00 PM to 02:00 PM</option>
+            <option value="2-3">02:00 PM to 03:00 PM</option>
+            <option value="3-4">03:00 PM to 04:00 PM (Peak Hour)</option>
+            <option value="4-5">04:00 PM to 05:00 PM (Peak Hour)</option>
+            <option value="5-6">05:00 PM  to 06:00 PM (Peak Hour)</option>
+        </select>
+      
+    </div>
+<!-- SUBSECTION GUESTS -->
+    <section class="ticketSection">
+      <h3>Who will be joining us?</h3>
+      <br><br>
+
+        <label for="slAdult">Sri Lankan Adult:</label><br>
+        <input type="number" id="slAdult" min="0" value="0" class="tickSec"><br><br>
+
+
+      <div class="ticket">
+        <label for="slChild">Sri Lankan Child:</label><br>
+        <input type="number" id="slChild" min="0" value="0"  class="tickSec">    <br><br>
+      </div>
+
+      <div class="ticket">
+        <label for="foreignerAdult">Foreigner Adult:</label><br>
+        <input type="number" id="foreignerAdult" min="0" value="0"  class="tickSec">    <br><br>
+      </div>
+
+      <div class="ticket">
+        <label for="foreignerChild">Foreigner Child:</label><br>
+        <input type="number" id="foreignerChild" min="0" value="0"  class="tickSec">    <br><br>
+      </div>
+
+      <div class="ticket">
+        <label for="infants">Infants:</label><br>
+        <input type="number" id="infants" min="0" value="0"  class="tickSec">    <br><br>
+      </div>
+
+    </section>
+ </form>
+</div>
+
+
+      <a href="details.html" class="btn" style="display: none;" >Continue with the purchase</a>
+
+      <div class="footercontent">
+        <div class="column1">
+          <h3>ABOUT US</h3>
+          <p>With the main goal of contributing
+            <br> to protect our island <br>
+            as it is a "biodiversity hotspot<br>
+            Also helping our fellow sri lankans<br>
+            and providing you an incredible experience when<br>
+            you travel around our beloved island <br>
+            and witness the beauty of what is called<br>
+             the "pearl of the indian ocean".
+          </p>
+        </div>
+      
+        <div class="column2">
+          <h3>STAY CONNECTED</h3>
+          <p>Get the newest information on hatcheries around sri lanka</p>
+          <br>
+          <form>
+            <input type="email" placeholder="Your Email Address"><br><br>
+            <button type="submit">SIGN UP</button>
+          </form>
+        </div>
+        <div class="column3">
+          <h3>CONTACT US</h3>
+          <p>123,Maple Street <br>
+          Colombo,Sri Lanka</p><br>© 2023 Ceylon Turtle Organization. All rights reserved.<br>Site design by Kavina Alahapperuma  
+        </div>
+      </div>
+ 
+  <script src = "tickets.js"></script>
+
+
+</body>
+</html>

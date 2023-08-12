@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ticketspage.css">
+    
+</head>
+<body>
+    <div class="ribbon">
+        <h1 class="ribbon-heading">BUY TICKETS</h1>
+        <h3><B><u>TICKETS</B></u> > DETAILS > PAYMENT > CONFIRMATION</h3>
+      </div>
+
+      <div class="link">
+        <a href="hikkaduwa.html" class="button2"><b>GO BACK</b></a>
+      </div>
+
+      <table>
+        <tr>
+          <th>Category</th>
+          <th>Normal Hour Charge (USD)</th>
+          <th>Peak Hour Charge (USD)</th>
+        </tr>
+        <tr>
+          <td>Foreigner Adult</td>
+          <td>10</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>Foreigner Child</td>
+          <td>5</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>SL Adult</td>
+          <td>4</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>SL Child</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+            <td>Infants</td>
+            <td>Free</td>
+            <td>Free</td>
+        </tr>
+      </table>
+
+          <br><br>
+          
+          <h2>WHEN WILL YOU BE JOINING US?</h2>
+        
+         
+          
+            <br><div class="calendar"><br>
+              <p><b>Date you will be visiting:</b></p>
+              <input type="date" id="visit-date" name="date">
+              </div>
+
+            <div class="ticketbox">
+            <div class="ticketType"><br>
+              <p>
+                <label for="slAdult"><b>SL Adult:</b></label>
+                <input type="number" id="sl-adult" value="0" min="0">
+              </p><br>
+              <p>
+                <label for="slChild"><b>SL Child:</b></label>
+                <input type="number" id="sl-child" value="0" min="0">
+              </p><br>
+              <p>
+                <label for="foreignAdult"><b>Foreign Adult:</b></label>
+                <input type="number" id="foreigner-adult" value="0" min="0">
+              </p><br>
+              <p>
+                <label for="foreignChild"><b>Foreign child:</b></label>
+                <input type="number" id="foreigner-child" value="0" min="0">
+              </p><br>
+              <p>
+                <label for="infant"><b>Infant:</b></label>
+                <input type="number" id="infant" value="0" min="0">
+              </p><br>
+  
+             
+              </div>
+            </div>
+          
+            <br><br>
+          
+            <div class="summarytable">
+            <div id="summary">
+            <table>
+              <tr>
+                  <th>Date:</th>
+                  <td><span id="summary-date"></span> </td>
+                  
+              </tr>
+              <tr>
+                  <th>Time:</th>
+                  <td><span id="summary-time"></span> </td>
+              </tr>
+              <tr>
+                  <th>Duration:</th>
+                  <td><span id="summary-duration"></span></td>
+              </tr>
+              
+              <tr>
+                  <th class="bold">Tickets:</th>
+                  <td class="bold">Charges</td>
+              </tr>
+             
+              </tr>
+              <tr>
+                  <th><span id="summary-tickets"></span> </th>
+                  <td><span id="summary-price"></span></td>
+              </tr>
+             
+              <tr>
+                  <th class="bold">Total Payable</th>
+                  <td class="bold"><div id="summary-total"></div> </td>
+              </tr>
+
+          </table>
+        </div>
+    </div>
+
+    <div class="time-slotbox">
+        <div class="time-slots">
+          <label for="time-slot">Select a time slot:</label><br>
+          <select id="time-slot">
+            
+            <option value="07:00-08:00">07:00 am to 08:00 am</option>
+            <option value="08:00-09:00">08:00 am to 09:00 am</option>
+            <option value="09:00-10:00">09:00 am to 10:00 am</option>
+            <option value="10:00-11:00">10:00 am to 11:00 am</option>
+            <option value="11:00-12:00">11:00 am to 12:00 pm</option>
+            <option value="12:00-13:00">12:00 pm to 01:00 pm</option>
+            <option value="13:00-14:00">01:00 pm to 02:00 pm</option>
+            <option value="14:00-15:00">02:00 pm to 03:00 pm</option>
+            <option value="15:00-16:00">03:00 pm to 04:00 pm</option>
+            <option value="16:00-17:00">04:00 pm to 05:00 pm</option>
+            <option value="17:00-18:00">05:00 pm to 06:00 pm</option>
+          </select>
+        </div>
+
+      </div>
+        
+        </div>
+    </div>
+    
+      </style>
+      
+
+
+        </form>
+
+
+      </section>
+      </div>
+     
+</div>
+
+
+
+</form>
+
+
+
+</div>
+
+<div class="vh"></div>
+  
+
+
+
+
+</body>
+
+<div class="button">
+    <a href="details.html" id="purchase-link" >
+      <button id="purchase-button" disabled>Continue with Purchase</button>
+      </a>
+    </div>
+    
+
+<script src="script.js"></script>
+</html>

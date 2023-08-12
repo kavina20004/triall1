@@ -1,0 +1,242 @@
+ *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav a {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.nav a:hover{
+    color: #242424;
+}
+.nav .active{
+    color: #373737
+}
+
+.topic {
+    height: 100px;
+    background: #333 ;
+    padding: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    } 
+    
+.topic h2 {
+    color: white;
+}
+
+    /* .topic {
+        position: relative;
+        text-align: center;
+        color: white;
+        padding: 50px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .topic h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .topic a {
+        text-decoration: none;
+        color: inherit; 
+        display: block;
+    } */
+
+.PricesTable {
+    border-collapse: collapse;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    position: sticky;
+    align-items: center;
+    border: 3px solid rgba(15, 27, 4, 0.901);
+}
+
+.PricesTable th, .PricesTable td {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black; 
+}
+
+.PricesTable th {
+    background-color: rgb(177, 177, 177);
+}
+
+hr {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .summarytable {
+    margin-right: 5%;
+    margin-top: 200px;
+    border-collapse: collapse;
+    width: 38%;
+    height: 50%;
+    border: 3px solid rgba(15, 27, 4, 0.901);
+    position: sticky;
+}
+
+.summarytable th, .summarytable td {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black; 
+}
+
+.summarytable th {
+    background-color: rgb(177, 177, 177);
+}
+
+.datesSection {
+    margin-left: 100px;
+    margin-bottom: 60px;
+}
+
+.datesSection h3 {
+    margin-top: -400px;
+}
+
+.timeList {
+    margin-left: 100px;
+    margin-bottom: 60px;
+
+}
+
+.timeslots {
+    width: 270px;
+    height: 180px;
+}
+
+.ticketSection {
+    margin-left: 100px;
+    margin-bottom: 100px;
+} 
+
+ .tickSec {
+    height: 30px;
+}
+
+.table-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -900px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+
+a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #204a64;
+  }
+
+
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #373737;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+    float: right;
+    margin-right: 7%;
+  }
+  
+  .btn:hover {
+    background-color: #757474;
+  } 
+  
+.footercontent {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    text-align: center;
+    margin-top: 140px;
+    width: 100%;
+    padding: 100px 15% ;
+    background: #333 ;
+    color: whitesmoke;
+    display: flex;
+    padding: 50px;
+    line-height: 40px;
+    justify-content: space-between;
+}
+
+.footercontent div {
+    text-align: center;
+    
+}
+.column1 {
+    margin-left: -40px;
+    text-align: left;
+    
+}
+.column1 h3 {
+    text-align: left;
+}
+.column1 p {
+    text-align: left;
+    font-size: medium;
+    
+}
+
+.column2 {
+    flex-grow: 1.5;
+    margin-left: -60px;
+
+}
+
+.column2 form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+
+}
+
+form button {
+   color: whitesmoke;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 8px 27px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .topic {
+        width: auto;
+    }
+    .PricesTable th, .PricesTable td,
+    .summarytable th, .summarytable td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+

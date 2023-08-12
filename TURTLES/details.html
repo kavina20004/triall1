@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="styles/details.css">
+    <link rel="stylesheet" href="international-telephone-input.css">
+  </head>
+  <body>
+
+    <div class ="topic">
+      <h2> Buy Tickets</h2>
+   </div>
+
+<div class="nav">
+   <a href="index.html"> &lt; HOME  </a>
+   <a href="tickets.html"> &lt; TICKETS  </a>
+   <a href="details.html"  class="active"> &lt; DETAILS  </a>
+</div>
+   <br>
+   <br>
+  
+
+
+    <form id="detailSection">
+
+      <h2> ENTER YOUR DETAILS</h2>
+      <div class="formSlot">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name">
+      </div> <br><br>
+
+      <div class="formSlot">
+      <div class="iti">
+        <label for="number">Number</label>
+        <input type="tel" id="number" name="phone">
+    </div><br><br>
+      </div>
+
+      <div class="formSlot">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" placeholder="Enter your email address">
+      </div><br><br>
+
+      <div class="formSlot">
+        <label for="emailconfirm">Email Address Confirmation</label>
+        <input type="text" id="emailconfirm" placeholder="Enter your email address">
+      </div><br><br>
+
+      <div class="formSlot">
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="" selected disabled>Select your gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div><br><br>
+      <div class="submit">
+        <input type="submit" value="Continue with purchase">
+      </div>
+
+    </form>
+       
+<table class="summarytable">  
+  <tr>
+      <td>Date</td>
+      <td id="selectedDate"></td>
+  </tr>
+  <tr>
+    <!-- TIME PERIOD -->
+      <td>Time</td> 
+      <td id="timePeriod"></td>
+  </tr>
+  <tr>
+      <td>Duration</td>
+      <td id="timeduration"></td>
+  </tr>
+  <tr>
+      <th>Tickets</th>
+      <th>Charges</th>
+  </tr>
+  <tr id="slAdultRow">
+    <td id="slAdultdata"></td>
+    <td id="slAdultSummary"></td>
+  </tr>
+  <tr id="slChildRow">
+    <td id="slChilddata"></td>
+    <td id="slChildSummary"></td>
+  </tr>
+  <tr id="foreignerAdultRow">
+    <td id="foreignerAdultdata"></td>
+    <td id="foreignerAdultSummary"></td>
+  </tr>
+  <tr id="foreignerChildRow">
+    <td id="foreignerChilddata"></td>
+    <td id="foreignerChildSummary"></td>
+  </tr>
+  <tr id="infantsRow">
+    <td id="infantsdata"></td>
+    <td id="infantsSummary"></td>
+  </tr>
+  <tr>
+    <td>Total Amount</td>
+    <td id="totalAmount"></td>
+  </tr> 
+</table>
+
+<div class="footercontent">
+  <div class="column1">
+    <h3>ABOUT US</h3>
+    <p>With the main goal of contributing
+      <br> to protect our island <br>
+      as it is a "biodiversity hotspot<br>
+      Also helping our fellow sri lankans<br>
+      and providing you an incredible experience when<br>
+      you travel around our beloved island <br>
+      and witness the beauty of what is called<br>
+       the "pearl of the indian ocean".
+    </p>
+  </div>
+
+  <div class="column2">
+    <h3>STAY CONNECTED</h3>
+    <p>Get the newest information on hatcheries around sri lanka</p>
+    <br>
+      <input type="email" placeholder="Your Email Address"><br><br>
+      <button type="submit">SIGN UP</button>
+  </div>
+  <div class="column3">
+    <h3>CONTACT US</h3>
+    <p>123,Maple Street <br>
+    Colombo,Sri Lanka</p><br>© 2023 Ceylon Turtle Organization. All rights reserved.<br>Site design by Kavina Alahapperuma  
+  </div>
+</div>
+
+
+
+    <script src="international-telephone-input.js"></script>
+    <script src="details.js"></script>
+  </body>
+</html>
